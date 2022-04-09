@@ -1,0 +1,12 @@
+#ASGI Libraries
+uvicorn[standard]==0.13.3
+
+#FastAPI Libraries
+fastapi==0.63.0
+starlette-context==0.3.3
+
+#Database Libraries
+pymongo[srv]==3.11.3
+
+typer==0.4.0
+python-Levenshtein==0.12.2
