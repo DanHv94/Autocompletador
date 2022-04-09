@@ -59,7 +59,6 @@ Data (you can download it from <a href="https://drive.google.com/file/d/1ji0zSzB
 ## Run the API
 
 To run the API use the following code:
-
     ```console
     $ ENV=dev uvicorn main:app --reload --port 3001
 
