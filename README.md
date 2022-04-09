@@ -15,6 +15,8 @@ API/
     main.py                                 // Server manager
     README.md                               // Instructions file
     requirements.txt                        // Requirements for the application
+    PruebaEcatep.png                        // Image of OpenAPI usage
+    PruebaLondo.png                         // Image of OpenAPI usage
 ```
 
 <div style="margin-bottom: 3%"></div>
@@ -59,15 +61,16 @@ Data (you can download it from <a href="https://drive.google.com/file/d/1ji0zSzB
 ## Run the API
 
 To run the API use the following code:
-    ```console
-    $ ENV=dev uvicorn main:app --reload --port 3001
 
-    INFO:     Uvicorn running on http://127.0.0.1:3001 (Press CTRL+C to quit)
-    INFO:     Started reloader process [28720]
-    INFO:     Started server process [28722]
-    INFO:     Waiting for application startup.
-    INFO:     Application startup complete.
-    ```
+```console
+$ ENV=dev uvicorn main:app --reload --port 3001
+
+INFO:     Uvicorn running on http://127.0.0.1:3001 (Press CTRL+C to quit)
+INFO:     Started reloader process [28720]
+INFO:     Started server process [28722]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+```
 
 <div style="margin-bottom: 3%"></div>
 
@@ -81,3 +84,13 @@ Because the API is built using FastAPI, the documentation for the endpoints is b
 Previously known as Swagger UI, to access the interactive docs open your browser at <a href="http://127.0.0.1:3001/docs" class="external-link" target="_blank">http://localhost:3001/docs</a>.
 
 Using this platform, you can test the endpoint.
+
+## Tests
+
+The following image shows the search endpoint's response when the text is "Londo" (There is at least one coincidence with that text in all the cities)
+
+![Image text](https://github.com/DanHv94/Autocompletador/blob/main/PruebaLondo.png)
+
+The following image shows the search endpoint's response when the text is "Ecatep" (there isn't any coincidence with that text in all the cities)
+
+![Image text](https://github.com/DanHv94/Autocompletador/blob/main/PruebaEcatep.png)
